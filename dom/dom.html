@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>domproject</title>
+        <style>
+            .btn{
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <script>
+        var page_elements="";
+        function end(){
+            var txt=document.createTextNode("end of the document");
+            document.body.appendChild(txt);
+        }
+        function display(){
+            for(i=0;i<=document.all.length;i++){
+                page_elements="<br>"+document.all[i].tagName;
+            }
+            
+        }
+    </script>
+    <body onload="display()">
+        <p class="exp" >faejfaefgehjfgaf</p>
+        <div id="main">
+            <p>jhvjhvjhv</p>
+            <p id="demo"></p>
+        </div>
+        <button class="btn" onclick="display()">click me</button>
+    </body>
+</html>
